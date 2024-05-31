@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 20px 0; /* Add top and bottom margin */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items from the top */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.meet-container {
+    width: 90%; /* Adjust width for better responsiveness */
+    max-width: 600px; /* Set a maximum width for larger screens */
+    max-height: 70vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    margin: 13vh auto; /* Center horizontally and add vertical margins */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.scenario-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow for both characters */
+}
+
+.description {
+    max-width: 600px;
+    text-align: left;
+}
+
+.description h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.description p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .meet-container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+        margin: 10vh auto; /* Adjust vertical margins for smaller screens */
+        max-height: 70vh; /* Max-height is maintained */
+    }
+    .scenario-text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+    .description h3 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    .description p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .profile img {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px; /* Adjust image size for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+/* Media Queries for Extra Small Screens */
+@media (max-width: 480px) {
+    .meet-container {
+        margin: 5vh auto; /* Further adjust vertical margins for extra small screens */
+    }
+}
+
+

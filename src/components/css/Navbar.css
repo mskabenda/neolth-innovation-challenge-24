@@ -1,0 +1,52 @@
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Span the entire width of the screen */
+  background-color: white;
+  height: 10vh; /* 10% of viewport height */
+  display: flex;
+  justify-content: center; /* Center the container within the navbar */
+  align-items: center; /* Center content vertically */
+  padding: 0 10px; /* Padding on left and right */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow properties */
+  z-index: 1000; /* The navbar is on top of other elements */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Ensure the container spans the full width and maintains the layout */
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* Space logo and icon evenly */
+  align-items: center;
+  width: 100%; /* Take up full width of the navbar */
+  max-width: 1200px; /* Limit the max width for large screens */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Logo Styles */
+.navbar-logo {
+  height: auto; /* Maintain aspect ratio */
+  max-width: 195px; /* Limit logo size for mobile */
+  margin: 5px 0; /* Spacing from top and bottom */
+}
+
+/* User Icon Styles */
+.user-icon {
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Limit icon size for mobile */
+  margin: 15px 0; /* Spacing from top and bottom */
+}
+
+/* Media Queries for Smaller Screens (Optional) */
+@media (max-width: 768px) {
+  /* Styles for smaller screens here if needed */
+  .navbar {
+      padding: 0 5px; /* Padding for mobile */
+  }
+  .navbar-logo, .user-icon {
+      max-width: 150px; /* Further limit size for smaller screens */
+  }
+}
+

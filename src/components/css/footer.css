@@ -1,0 +1,65 @@
+/* Footer styles */
+.footer {
+  position: fixed; /* Fix the footer to the bottom */
+  bottom: 0; /* Position it at the bottom edge */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Span the entire width */
+  background-color: #80ccdb; /* Teal color */
+  height: 10vh; /* 10% of viewport height */
+  display: flex;
+  justify-content: center; /* Center the container within the footer */
+  align-items: center; /* Center content vertically */
+  padding: 0 10px; /* Padding on left and right */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow */
+  z-index: 1000; /* The footer is on top of other elements */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Ensure the container spans the full width and maintains the layout */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap to multiple lines if needed */
+  justify-content: space-between; /* Space icons evenly within container */
+  align-items: center;
+  width: 100%; /* Take up full width of the footer */
+  max-width: 1200px; /* limit the max width for large screens */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Footer Icon Styles */
+.footer-icon {
+  text-align: center; /* Center text below icon */
+  margin: 10px; /* Spacing between icons */
+  position: relative; /* Enable positioning for icon name */
+}
+
+.footer-icon img {
+  height: 50px; /* Adjust icon size as needed */
+  width: 50px; /* Adjust icon size as needed */
+}
+
+.icon-name {
+  color: white; /* Text color for icon name */
+  font-size: 12px; /* Adjust text size as needed */
+  position: absolute; /* Absolute positioning within footer-icon */
+  top: 48px; /* Position at the bottom of the icon */
+  left: 50%; /* Center horizontally within the icon */
+  transform: translateX(-50%); /* Offset to align with center of icon */
+  margin: 0; /* Remove default margin */
+}
+
+/* Media Queries for Smaller Screens (Optional) */
+@media (max-width: 768px) {
+  /* Styles for smaller screens here */
+  .footer {
+      padding: 0 5px; /* Adjust padding for mobile */
+  }
+  .footer-icon img {
+      height: 40px; /* Adjust icon size for smaller screens */
+      width: 40px; /* Adjust icon size for smaller screens */
+  }
+  .icon-name {
+      font-size: 10px; /* Adjust text size for smaller screens */
+      top: 38px; /* Adjust position for smaller icons */
+  }
+}

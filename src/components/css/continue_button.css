@@ -1,0 +1,35 @@
+.continue-button {
+  background-color: #80ccdb; /* Teal */
+  border: none; /* Remove border */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+
+  /* Responsive styles using viewport units (vw, vh) */
+  position: fixed;
+  bottom: 15vh;
+  left: 25vw;
+  width: 50vw;
+}
+
+/* media queries for specific screen sizes */
+@media (min-width: 768px) {
+  /* Styles for large screens */
+  .continue-button {
+      /* space to edefine styles for larger screens */
+  }
+}
+
+@media (max-width: 767px) {
+  /* Styles for smaller screens */
+  .continue-button {
+      width: 60vw; /* Adjust width for smaller screens */
+      bottom: 15vh; /* Adjust bottom margin for smaller screens */
+  }
+}
